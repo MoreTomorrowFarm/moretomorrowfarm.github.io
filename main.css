@@ -1,8 +1,26 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    padding: 0;
-    margin: 0;
     background: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Amatic SC', cursive;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+.page {
+    height: 100vh;
+    text-align: center;
+    padding: 4em;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 .image-strips .cell a {
@@ -34,7 +52,7 @@ body {
 .title-overlay {
     background: black;
     color: #eee;
-    font-size: 4em;
+    font-size: 6em;
     font-weight: 300;
     letter-spacing: .15em;
     margin: auto 0;
@@ -44,6 +62,7 @@ body {
     top: 10%;
     width: 100%;
     z-index: 2;
+    text-transform: upppercase;
 }
 
 /* MEDIUM SCREENS */
@@ -74,8 +93,15 @@ body {
     }
 }
 
-.main-page-2 {
-    height: 100vh;
-    text-align: center;
-    padding: 4em;
+.fixed-title {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+.fixed-strips {
+    /* position: fixed; */
+    top: -80vh;
+    width: 100%;
 }
