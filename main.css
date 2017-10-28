@@ -9,12 +9,27 @@ h1, h2, h3, h4 {
     font-family: 'Amatic SC', cursive;
 }
 
-h2 {
+section {
+    padding-top: 2em;
+}
+
+section#first-page {
+    padding-top: 0;
+}
+
+section > h2 {
     font-size: 4em;
+    margin: 0 auto 1em;
+    border-bottom: solid 1px black;
+    width: 200px;
+}
+
+a, a:visited {
+    color: black;
 }
 
 .page {
-    height: 100vh;
+    /* height: 100vh; */
     text-align: center;
     padding: 4em;
 }
@@ -57,6 +72,7 @@ p {
     letter-spacing: .15em;
     margin: auto 0;
     opacity: .5;
+    padding: 0 90px;
     position: absolute;
     text-align: center;
     top: 10%;
@@ -104,4 +120,38 @@ p {
     /* position: fixed; */
     top: -80vh;
     width: 100%;
+}
+
+.social-icons {
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    /* display: flex; */
+}
+
+.social-icons.grid-y .fa-instagram {
+    align-self: flex-end;
+}
+
+.social-icons.grid-y .fa-envelope-o {
+    align-self: flex-start;
+}
+
+
+.social-icons {
+    background: black;
+
+}
+.social-icons .cell {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.social-icons .cell:hover {
+    color: #faf;
 }

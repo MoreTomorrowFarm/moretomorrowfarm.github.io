@@ -13,35 +13,50 @@
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway" rel="stylesheet">
         <link href="main.css" rel="stylesheet">
 
+        <script src="https://use.fontawesome.com/9a395628db.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
         <script src="main.js"></script>
     </head>
     <body>
-        <h1 class="title-overlay">More Tomorrow Farm</div>
+        <h1 class="title-overlay">
+            <div>
+                More Tomorrow Farm
+            </div>
+            <div class="social-icons grid-y">
+                <a class="cell medium-4" href="https://instagram.com/moretomorrowfarm">
+                    <i class="fa fa-instagram fa-fw fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="cell medium-4" href="https://facebook.com/moretomorrowfarm">
+                    <i class="fa fa-facebook fa-fw fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="cell medium-4" href="mailto:moretomorrowfarm@gmail.com">
+                    <i class="fa fa-envelope-o fa-fw fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
         </h1>
         <section id="first-page">
             <div class="image-strips">
                 <div class="grid-x">
                     <div class="cell medium-3">
-                        <a href="#">
-                            <h4 class="link-text">News</h4>
-                            <img class="strip-img" src="images/0015.jpg"/>
-                        </a>
-                    </div>
-                    <div class="cell medium-3">
-                        <a href="#">
-                            <h4 class="link-text">Events</h4>
-                            <img class="strip-img" src="images/IMG_20170704_174638_DRO.jpg"/>
-                        </a>
-                    </div>
-                    <div class="cell medium-3">
-                        <a href="#">
+                        <a onclick="window.scrollTo('#farm') " href="#">
                             <h4 class="link-text">Farm</h4>
                             <img class="strip-img" src="images/0015.jpg"/>
                         </a>
                     </div>
                     <div class="cell medium-3">
-                        <a href="#">
+                        <a onclick="window.scrollTo('#events') " href="#">
+                            <h4 class="link-text">Events</h4>
+                            <img class="strip-img" src="images/IMG_20170704_174638_DRO.jpg"/>
+                        </a>
+                    </div>
+                    <div class="cell medium-3">
+                        <a onclick="window.scrollTo('#farm') " href="#">
+                            <h4 class="link-text">Farm</h4>
+                            <img class="strip-img" src="images/0015.jpg"/>
+                        </a>
+                    </div>
+                    <div class="cell medium-3">
+                        <a onclick="window.scrollTo('#contact')" href="#">
                             <h4 class="link-text">Contact</h4>
                             <img class="strip-img" src="images/IMG_20170810_140231_704.jpg"/>
                         </a>
@@ -51,43 +66,70 @@
         </section>
 
         <section class="page">
-            <h2>News</h2>
-            <p>More Tomorrow Farm is a small, family farm that provides fresh, specialty cut flowers for florists, weddings, business and special events in Western North Carolina.</p>
+            <h2 id="farm">Farm</h2>
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+                    <div class="medium-6 cell">
+                        <p>More Tomorrow Farm is a small, family flower farm in
+                        Hendersonville, NC started in 2013 by Brett Adams and
+                        Heather duPlooy. We specialize in growing high quality,
+                        specialty cut flowers.</p>
 
-            <p>Although not certified we grow everything using strict organic principles and sustainable practices.</p>
+                        <p>More Tomorrow Farm is a small, family farm that
+                        provides fresh, specialty cut flowers for florists,
+                        weddings, business and special events in Western North
+                        Carolina.</p>
 
-            <p>Contact us or find as at the Transylvania Farmer's Market from April to October from 8am to 12pm.</p>
+                        <p>Although not certified we grow everything using
+                        strict organic principles and sustainable practices.</p>
 
+                        <p>Contact us or find as at the Transylvania Farmer's
+                        Market from April to October from 8am to 12pm.</p>
+                    </div>
+                    <div class="medium-6 cell">
+                        <img src="images/family_photo.png"/>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="page">
-            <h2>Events</h2>
-            <p>More Tomorrow Farm is a small, family farm that provides fresh, specialty cut flowers for florists, weddings, business and special events in Western North Carolina.</p>
+            <h2 id="events">Events</h2>
+            <div class="grid-container">
+                <p>More Tomorrow Farm is a small, family farm that provides
+                fresh, specialty cut flowers for florists, weddings, business
+                and special events in Western North Carolina.</p>
 
-            <p>Although not certified we grow everything using strict organic principles and sustainable practices.</p>
+                <p>Although not certified we grow everything using strict
+                organic principles and sustainable practices.</p>
 
-            <p>Contact us or find as at the Transylvania Farmer's Market from April to October from 8am to 12pm.</p>
-
+                <p>Contact us or find as at the Transylvania Farmer's Market
+                from April to October from 8am to 12pm.</p>
+            </div>
         </section>
 
         <section class="page">
-            <h2>Farm</h2>
-            <p>More Tomorrow Farm is a small, family farm that provides fresh, specialty cut flowers for florists, weddings, business and special events in Western North Carolina.</p>
+            <h2 id="gallery">Gallery</h2>
+            <p>More Tomorrow Farm is a small, family farm that provides fresh,
+            specialty cut flowers for florists, weddings, business and special
+            events in Western North Carolina.</p>
 
-            <p>Although not certified we grow everything using strict organic principles and sustainable practices.</p>
+            <p>Although not certified we grow everything using strict organic
+            principles and sustainable practices.</p>
 
-            <p>Contact us or find as at the Transylvania Farmer's Market from April to October from 8am to 12pm.</p>
+            <p>Contact us or find as at the Transylvania Farmer's Market from
+            April to October from 8am to 12pm.</p>
 
         </section>
 
-        <section class="page">
-            <h2>Contacts</h2>
-            <p>More Tomorrow Farm is a small, family farm that provides fresh, specialty cut flowers for florists, weddings, business and special events in Western North Carolina.</p>
+        <section class="contact-page page">
+            <h2 id="contact">Contact</h2>
 
-            <p>Although not certified we grow everything using strict organic principles and sustainable practices.</p>
+            <p>You can contact us at:</p>
 
-            <p>Contact us or find as at the Transylvania Farmer's Market from April to October from 8am to 12pm.</p>
+            <p><a href="mailto:moretomorrowfarm@gmail.com">moretomorrowfarm@gmail.com</a></p>
 
+            <p><a href="tel:(828) 692-4363">(828) 692-4363</a>
         </section>
     </body>
 </html>
