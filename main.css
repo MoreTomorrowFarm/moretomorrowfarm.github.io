@@ -229,4 +229,21 @@ p {
     .contact-page {
         margin-bottom: 2em;
     }
+
+    .events-image-link {
+        background: no-repeat center / cover url('images/IMG_3619_strip_small.jpg')
+    }
+
+    .farm-image-link {
+        background: no-repeat center / cover url('images/IMG_20170704_174638_DRO_strip_small.jpg')
+    }
+
+
+    .gallery-image-link {
+        background: no-repeat center / cover url('images/0015_strip_small.jpg')
+    }
+
+    .contact-image-link {
+        background: no-repeat center / cover url('images/IMG_20170810_140231_704_strip_small.jpg')
+    }
 }
