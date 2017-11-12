@@ -157,6 +157,11 @@ p {
     .social-icons {
         display: none;
     }
+
+    .gallery-thumbnail img {
+        width: 140px;
+        height: 140px;
+    }
 }
 
 .fixed-title {
@@ -198,4 +203,15 @@ p {
 
 .social-icons .cell:hover {
     color: #faf;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: center;
+}
+
+.gallery-thumbnail img {
+    margin: 0 10px 20px 10px;
 }
