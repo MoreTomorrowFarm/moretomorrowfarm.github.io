@@ -10,17 +10,21 @@ h1, h2, h3, h4 {
 }
 
 section {
-    padding-top: 2em;
 }
 
-section#first-page {
+#first-page {
     padding-top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    /* top: -85vh; */
+    top: -82%;
 }
 
 section > h2 {
+    border-bottom: solid 1px black;
     font-size: 4em;
     margin: 0 auto 1em;
-    border-bottom: solid 1px black;
+    padding-top: 2em;
     width: 200px;
 }
 
@@ -28,24 +32,49 @@ a, a:visited {
     color: black;
 }
 
-.page {
-    /* height: 100vh; */
-    text-align: center;
-    padding: 4em;
-}
-
 p {
     font-size: 1.2em;
 }
 
-.image-strips .cell a {
-    display: block;
-    position: relative;
-    background: white;
+.page {
+    text-align: center;
+    /* padding: 0 4em 4em; */
+    padding-bottom: 4em;
 }
 
-.image-strips .cell a:hover {
+.contact-page {
+    margin-bottom: 16em;
+}
+
+
+.image-strip {
+    background: white;
+    display: block;
+    height: 100vh;
+    position: relative;
+
+    /* fixes white lines between images on hover */
+    width: 101%
+}
+
+.image-strip:hover {
     opacity: .9;
+}
+
+.farm-image-link {
+    background: no-repeat center / cover url('images/IMG_20170704_174638_DRO_strip_large.jpg')
+}
+
+.events-image-link {
+    background: no-repeat center / cover url('images/IMG_3619_strip_large.jpg')
+}
+
+.gallery-image-link {
+    background: no-repeat center / cover url('images/0015_strip_large.jpg')
+}
+
+.contact-image-link {
+    background: no-repeat center / cover url('images/IMG_20170810_140231_704_strip_large.jpg')
 }
 
 .strip-img {
@@ -54,7 +83,7 @@ p {
 }
 
 .link-text {
-    bottom: 2%;
+    bottom: 20px;
     color: #eee;
     font-size: 3em;
     font-weight: 300;
@@ -92,7 +121,22 @@ p {
 
 /* SMALL SCREENS */
 @media screen and (max-width: 39.9375em) {
-    .strip-img {
+
+    section > h2 {
+        padding-top: 1em;
+    }
+
+    .page {
+        /* padding: 0 1em 1em; */
+        padding-bottom: 1em;
+    }
+
+    #first-page {
+        position: static;
+        top: 0;
+    }
+
+    .image-strip {
         height: 25vh;
         width: 100vw;
     }
@@ -101,11 +145,17 @@ p {
         top: 0;
         font-size: 1.5em;
         opacity: .7;
+        padding: 0;
     }
 
     .link-text {
         bottom: 0;
         width: 100%;
+        font-weight: bold;
+    }
+
+    .social-icons {
+        display: none;
     }
 }
 
@@ -113,12 +163,6 @@ p {
     position: fixed;
     top:0;
     left:0;
-    width: 100%;
-}
-
-.fixed-strips {
-    /* position: fixed; */
-    top: -80vh;
     width: 100%;
 }
 
