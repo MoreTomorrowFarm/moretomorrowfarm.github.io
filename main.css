@@ -43,9 +43,8 @@ p {
 }
 
 .contact-page {
-    margin-bottom: 16em;
+    margin-bottom: 8em;
 }
-
 
 .image-strip {
     background: white;
@@ -110,59 +109,12 @@ p {
     text-transform: upppercase;
 }
 
-/* MEDIUM SCREENS */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .link-text {
-        bottom: 0;
-        width: 100%;
-        font-size: 2.5em;
-    }
+
+.map-iframe {
+    width: 600px;
+    height: 450px;
 }
 
-/* SMALL SCREENS */
-@media screen and (max-width: 39.9375em) {
-
-    section > h2 {
-        padding-top: 1em;
-    }
-
-    .page {
-        /* padding: 0 1em 1em; */
-        padding-bottom: 1em;
-    }
-
-    #first-page {
-        position: static;
-        top: 0;
-    }
-
-    .image-strip {
-        height: 25vh;
-        width: 100vw;
-    }
-
-    .title-overlay {
-        top: 0;
-        font-size: 1.5em;
-        opacity: .7;
-        padding: 0;
-    }
-
-    .link-text {
-        bottom: 0;
-        width: 100%;
-        font-weight: bold;
-    }
-
-    .social-icons {
-        display: none;
-    }
-
-    .gallery-thumbnail img {
-        width: 140px;
-        height: 140px;
-    }
-}
 
 .fixed-title {
     position: fixed;
@@ -214,4 +166,67 @@ p {
 
 .gallery-thumbnail img {
     margin: 0 10px 20px 10px;
+}
+
+/* MEDIUM SCREENS */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .link-text {
+        bottom: 0;
+        width: 100%;
+        font-size: 2.5em;
+    }
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width: 39.9375em) {
+
+    section > h2 {
+        padding-top: 1em;
+    }
+
+    .page {
+        /* padding: 0 1em 1em; */
+        padding-bottom: 1em;
+    }
+
+    #first-page {
+        position: static;
+        top: 0;
+    }
+
+    .image-strip {
+        height: 25vh;
+        width: 100vw;
+    }
+
+    .title-overlay {
+        top: 0;
+        font-size: 1.5em;
+        opacity: .7;
+        padding: 0;
+    }
+
+    .link-text {
+        bottom: 0;
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .gallery-thumbnail img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .map-iframe {
+        width: 300px;
+        height: 400px;
+    }
+
+    .contact-page {
+        margin-bottom: 2em;
+    }
 }
