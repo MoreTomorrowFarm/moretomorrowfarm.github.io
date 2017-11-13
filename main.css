@@ -9,9 +9,6 @@ h1, h2, h3, h4 {
     font-family: 'Amatic SC', cursive;
 }
 
-section {
-}
-
 #first-page {
     padding-top: 0;
     position: -webkit-sticky;
@@ -28,8 +25,9 @@ section > h2 {
     width: 200px;
 }
 
-a, a:visited {
+a, a:visited:not(:hover) {
     color: black;
+    text-decoration: underline;
 }
 
 p {
