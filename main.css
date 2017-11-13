@@ -99,7 +99,7 @@ p {
     font-weight: 300;
     letter-spacing: .15em;
     margin: auto 0;
-    opacity: .5;
+    opacity: .6;
     padding: 0 90px;
     position: absolute;
     text-align: center;
@@ -202,7 +202,7 @@ p {
     .title-overlay {
         top: 0;
         font-size: 1.5em;
-        opacity: .7;
+        opacity: .8;
         padding: 0;
     }
 
