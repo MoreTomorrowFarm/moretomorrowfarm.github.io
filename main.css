@@ -25,7 +25,7 @@ section > h2 {
     width: 200px;
 }
 
-a, a:visited:not(:hover) {
+p a, p a:visited:not(:hover) {
     color: black;
     text-decoration: underline;
 }
